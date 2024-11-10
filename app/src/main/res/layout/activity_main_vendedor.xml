@@ -20,5 +20,14 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header_vendedor"
-        app:menu="@menu/nav_drawer_vendedor_menu" />
+        app:menu="@menu/nav_drawer_vendedor_menu" >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Ubicacion"
+            android:layout_marginTop="40dp"
+            android:text="@string/Ubicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </com.google.android.material.navigation.NavigationView>
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -7,6 +7,7 @@
     <string name="op_mi_tienda_v">Mi tienda</string>
     <string name="op_resenia_v">Reseñas</string>
     <string name="op_cerrar_sesion_v">Cerrar sesion</string>
+    <string name="Ubicacion">Ubicacion</string>
 
     <string name="op_mis_productos_v">Mis productos</string>
     <string name="op_mis_ordenes_v">Ordenes</string>
@@ -27,7 +28,9 @@
     <string name="btnLoginV">Ingresar</string>
     <string name="txtNocuenta">¿No tienes una cuenta?</string>
     <string name="tvRegistrarV">Registrarme</string>
+    <string name="btnGoogleV">Ingresa con tu cuenta de Google</string>
 
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

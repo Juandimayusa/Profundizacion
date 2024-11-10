@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.googleService)
+    alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
 }
 
 android {
@@ -41,6 +42,9 @@ android {
    viewBinding{
        enable = true
    }
+    buildFeatures {
+        viewBinding = true
+    }
 
 }
 
@@ -48,11 +52,15 @@ android {
 dependencies {
 
     implementation(libs.lottie)/*Animaciones*/
+    implementation(libs.firebaseBoom)/*Autenticacion con google */
+    implementation(libs.googlePlayServices)/*Servicios de google */
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.play.services.location)
+    implementation(libs.play.services.maps)/*Localizacion*/
     testImplementation(libs.junit)
     implementation(libs.realTimeDatabase)/*Base de datos en tiempo real*/
     implementation(libs.firebaseAuth)/*Autenticacion con firebase*/

@@ -35,6 +35,9 @@ firebaseBoom={group="com.google.firebase", name="firebase-bom", version.ref="fir
 googlePlayServices={group="com.google.android.gms", name="play-services-auth", version.ref="googlePlayServicesV"}
 play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
 play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
+
+
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

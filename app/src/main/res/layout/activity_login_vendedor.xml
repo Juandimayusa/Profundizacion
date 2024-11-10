@@ -15,7 +15,7 @@
         android:padding="15dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="80dp"
@@ -92,14 +92,25 @@
             android:textColor="@color/celeste_oscuro"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/googleButton"
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
             android:text="@string/btnGoogleV" />
+
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btnGoogleSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/btnGoogleV"/>
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>

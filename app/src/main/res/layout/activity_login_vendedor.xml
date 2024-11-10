@@ -7,29 +7,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vendedor.LoginVendedorActivity">
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="15dp"
-        >
+        android:padding="15dp">
 
         <TextView
-            android:text="@string/txtLoginV"
-            android:layout_gravity="center"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginTop="80dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:text="@string/txtLoginV"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
         <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/login_vendedor"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            />
+            android:src="@drawable/login_vendedor" />
         <!--Correo-->
         <com.google.android.material.textfield.TextInputLayout
 
@@ -38,12 +38,12 @@
 
             <EditText
                 android:id="@+id/etEmailV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:drawableStart="@drawable/icono_email"
                 android:drawablePadding="10dp"
                 android:hint="@string/etEmailV"
-                android:inputType="textEmailAddress"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
         <!--Contraseña-->
         <com.google.android.material.textfield.TextInputLayout
@@ -54,42 +54,53 @@
 
             <EditText
                 android:id="@+id/etPassword"
-                android:hint="@string/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:drawableStart="@drawable/icono_contrasenia"
                 android:drawablePadding="10dp"
-                android:inputType="textPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:hint="@string/etPassword"
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLoginV"
-            android:textAllCaps="true"
-            app:cornerRadius="8dp"
-            android:layout_marginTop="15dp"
-            android:layout_gravity="center"
-            android:text="@string/btnLoginV"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="@string/btnLoginV"
+            android:textAllCaps="true"
+            app:cornerRadius="8dp" />
         <!--Pregunta-->
         <TextView
-            android:text="@string/txtNocuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="@string/txtNocuenta" />
         <!--Registrar vendedor-->
 
         <TextView
             android:id="@+id/tvRegistrarV"
-            android:text="@string/tvRegistrarV"
-            android:textStyle="bold"
-            android:textColor="@color/celeste_oscuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="@string/tvRegistrarV"
+            android:textColor="@color/celeste_oscuro"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/googleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:text="@string/btnGoogleV" />
+
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
